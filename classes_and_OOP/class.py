@@ -180,4 +180,21 @@ print(s.__len__())
 #if you can avoid then try to avoid iheritance and use functions
 
 #Dynamic binding and duck typing
+#Dynamic binding:to find attributes of the class
 
+#inhereting from the built-in types is dangerous
+class Udict(dict):
+    def __setitem__(self, key, value):
+        super().__setitem__(key.upper(), value)
+#it intially seems working
+f = Udict()
+f['name'] = 'Demo'
+f['number'] = 79
+print(f)
+
+#further
+u = Udict(name='Guido', number=37)
+print(u)
+
+#you can find that how many instances has been created by using
+#num_accounts
