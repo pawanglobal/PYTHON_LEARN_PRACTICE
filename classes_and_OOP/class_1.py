@@ -76,6 +76,8 @@ print(d.noise())
 
 #Type based approach
 
+#Descriptors
+
 #class definition process
 
 #Dynamic class creation
